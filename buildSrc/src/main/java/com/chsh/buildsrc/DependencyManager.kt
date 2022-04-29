@@ -1,4 +1,4 @@
-package com.hi.dhl.plugin
+package com.chsh.buildsrc
 
 /**
  * <pre>
@@ -37,7 +37,8 @@ object Versions {
     const val hit = "2.28-alpha"
     const val hitViewModule = "1.0.0-alpha01"
     const val appStartup = "1.0.0"
-    const val material = "1.2.1"
+    const val material = "1.3.0"
+    const val compose = "1.1.1"
 }
 
 object AndroidX {
@@ -125,5 +126,18 @@ object Depend {
     const val jDatabinding = "com.hi-dhl:jdatabinding:${Versions.jDatabinding}"
     const val progressview = "com.hi-dhl:progressview:${Versions.progressview}"
     const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+}
+
+object Compose{
+    const val ui = "androidx.compose.ui:ui:${Versions.compose}"
+    const val uiTool = "androidx.compose.ui:ui-tooling:${Versions.compose}"
+    const val foundation = "androidx.compose.foundation:foundation:${Versions.compose}"
+    const val material = "androidx.compose.material:material:${Versions.compose}"
+    const val materialCore = "androidx.compose.material:material-icons-core:${Versions.compose}"
+    const val materialExtend = "androidx.compose.material:material-icons-extended:${Versions.compose}"
+    const val runtimeLivedata = "androidx.compose.runtime:runtime-livedata:${Versions.compose}"
+    const val rxjava2 = "androidx.compose.runtime:runtime-rxjava2:${Versions.compose}"
+    const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
+    const val activity = "androidx.activity:activity-compose:1.4.0"
 }
 

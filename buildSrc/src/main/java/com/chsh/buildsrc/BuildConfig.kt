@@ -1,12 +1,5 @@
-package com.hi.dhl.plugin
+package com.chsh.buildsrc
 
-/**
- * <pre>
- *     author: dhl
- *     date  : 2020/7/3
- *     desc  : 配置和 Build 相关的
- * </pre>
- */
 object BuildConfig {
     const val compileSdkVersion = 31
     const val buildToolsVersion = "29.0.3"

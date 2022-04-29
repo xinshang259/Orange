@@ -1,5 +1,7 @@
-import com.hi.dhl.plugin.AndroidX
-import com.hi.dhl.plugin.Fragment
+import com.chsh.buildsrc.Android
+import com.chsh.buildsrc.AndroidX
+import com.chsh.buildsrc.Fragment
+import com.chsh.buildsrc.Compose
 
 plugins {
     id 'com.android.application'
@@ -46,10 +48,10 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation AndroidX.coreKtx
+    implementation AndroidX.appcompat
+    implementation Android.meteria
+    implementation AndroidX.constraintlayout
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
@@ -61,11 +63,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // 基础UI框架
-    implementation "androidx.compose.ui:ui:1.0.1"
+    implementation Compose.ui
     // Material风格布局
-    implementation "androidx.compose.material:material:1.0.1"
+    implementation Compose.material
     // Compose扩展Activity
-    implementation 'androidx.activity:activity-compose:1.3.0-alpha06'
+    implementation Compose.activity
     // UI测试
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.0.1"
     // UI工具包
