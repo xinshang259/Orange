@@ -2,6 +2,7 @@ package com.chsh.orange.mainscreen
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -16,15 +17,24 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.chsh.orange.R
+import com.chsh.orange.ui.widgets.Banner
+import com.google.accompanist.pager.ExperimentalPagerApi
 
 class ComposeActivity : ComponentActivity() {
 
+    companion object{
+        private const val TAG = "ComposeActivity"
+    }
 
+    @ExperimentalPagerApi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             Text1()
             MessageCard()
+            Banner(list = null, onClick = { a, b ->
+                Log.d(TAG, "onCreate() called with: a = $a, b = $b")
+            })
         }
     }
 
@@ -49,6 +59,7 @@ class ComposeActivity : ComponentActivity() {
         Column {
             Text(text = "compose")
         }
+
     }
 
 }

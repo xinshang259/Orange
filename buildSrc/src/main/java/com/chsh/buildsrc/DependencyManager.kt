@@ -34,7 +34,7 @@ object Versions {
     const val jDatabinding = "1.0.4"
     const val progressview = "1.0.2"
     const val runtime = "1.1.0"
-    const val hit = "2.28-alpha"
+    const val hit = "2.38.1"
     const val hitViewModule = "1.0.0-alpha01"
     const val appStartup = "1.0.0"
     const val material = "1.3.0"
@@ -58,8 +58,9 @@ object AndroidX {
     const val lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
 }
 
-object Android {
+object Basic {
     const val meteria = "com.google.android.material:material:${Versions.material}"
+    const val gson = "com.google.code.gson:gson:2.8.6"
 }
 
 object Hilt {
