@@ -62,8 +62,8 @@ fun Banner(
             LaunchedEffect(pagerState.currentPage, executeChangePage) {
                 if (pagerState.pageCount > 0) {
                     delay(timeMillis = timeMillis)
+                    pagerState.animateScrollToPage((pagerState.currentPage + 1) % (pagerState.pageCount))
                 }
-                pagerState.animateScrollToPage((pagerState.currentPage + 1) / (pagerState.currentPage))
             }
 
             HorizontalPager(
@@ -102,17 +102,20 @@ fun Banner(
                     }
                     .fillMaxSize()
             ) { page ->
-            Image(painter = rememberCoilPainter(request = list[page].imgUrl),
-            modifier = Modifier
-                .fillMaxSize()
-                .clip(shape = RoundedCornerShape(16.dp)),
-            contentDescription = null,
-            contentScale = ContentScale.Crop)
+                Image(
+                    painter = rememberCoilPainter(request = list[page].imgUrl),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .clip(shape = RoundedCornerShape(16.dp)),
+                    contentDescription = null,
+                    contentScale = ContentScale.Crop
+                )
             }
             Box(
                 Modifier
                     .align(indicatorAlignment)
-                    .padding(bottom = 6.dp, start = 6.dp, end = 6.dp)) {
+                    .padding(bottom = 6.dp, start = 6.dp, end = 6.dp)
+            ) {
 
                 Row(
                     horizontalArrangement = Arrangement.Center,
@@ -122,10 +125,11 @@ fun Banner(
                         var size by remember {
                             mutableStateOf(5.dp)
                         }
-                        size = if (pagerState.currentPage == index)7.dp else 5.dp
-                        
-                        val color = if(pagerState.currentPage == index) MaterialTheme.colors.primary else Color.Gray
-                        
+                        size = if (pagerState.currentPage == index) 7.dp else 5.dp
+
+                        val color =
+                            if (pagerState.currentPage == index) MaterialTheme.colors.primary else Color.Gray
+
                         Box(
                             modifier = Modifier
                                 .clip(CircleShape)
@@ -133,11 +137,15 @@ fun Banner(
                                 .animateContentSize()
                                 .size(size)
                         ) {
-                            if(index != list.lastIndex) Spacer(modifier = Modifier.height(0.dp).width(4.dp))
+                            if (index != list.lastIndex) Spacer(
+                                modifier = Modifier
+                                    .height(0.dp)
+                                    .width(4.dp)
+                            )
                         }
                     }
                 }
-                
+
             }
         }
 

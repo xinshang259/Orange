@@ -79,15 +79,19 @@ dependencies {
     implementation Compose.material
     // Compose扩展Activity
     implementation Compose.activity
+    implementation Compose.viewmodel
+    implementation Compose.foundation
+    implementation Compose.foundationLayout
     // UI测试
-    androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.0.1"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.0.5"
     // UI工具包
-    debugImplementation "androidx.compose.ui:ui-tooling:1.0.1"
+    debugImplementation "androidx.compose.ui:ui-tooling:1.0.5"
 
     implementation "com.google.accompanist:accompanist-pager:0.20.2"
     implementation "com.google.accompanist:accompanist-pager-indicators:0.18.0"
     implementation "com.google.accompanist:accompanist-coil:0.15.0"
     implementation "com.google.accompanist:accompanist-insets:0.18.0"
     implementation "com.google.accompanist:accompanist-systemuicontroller:0.18.0"
+    implementation "com.google.accompanist:accompanist-placeholder-material:0.18.0"
 
 }

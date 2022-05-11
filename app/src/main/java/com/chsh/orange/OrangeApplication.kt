@@ -2,7 +2,9 @@ package com.chsh.orange
 
 import android.app.Application
 import com.chsh.orange.util.GlobalContext
+import dagger.hilt.android.HiltAndroidApp
 
+@HiltAndroidApp
 class OrangeApplication : Application() {
 
     override fun onCreate() {
