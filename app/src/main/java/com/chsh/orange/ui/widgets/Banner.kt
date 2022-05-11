@@ -19,7 +19,6 @@ import androidx.compose.ui.input.pointer.*
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import coil.compose.rememberImagePainter
 import com.chsh.orange.R
 import com.chsh.orange.util.GlobalContext
 import com.google.accompanist.coil.rememberCoilPainter

@@ -45,7 +45,7 @@ class ComposeActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Column {
-                AppToolsBar(title = "橘子应用",imageVector = Icons.Default.Search)
+                AppToolsBar(title = "橘子应用", imageVector = Icons.Default.Search)
 //                RecommendPage()
                 AppButton(text = "点我") {
                     Toast.makeText(GlobalContext.context, "click button", Toast.LENGTH_LONG).show()
