@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Orange">
         <activity
-            android:name=".mainscreen.ComposeActivity"
+            android:name="com.chsh.orange.app.mainscreen.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

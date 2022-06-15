@@ -20,7 +20,6 @@ object Versions {
     const val kotlinCoroutinesCore = "1.3.7"
     const val kotlinCoroutinesAndrid = "1.3.6"
     const val koin = "2.1.5"
-    const val work = "2.2.0"
     const val room = "2.3.0"
     const val cardview = "1.0.0"
     const val recyclerview = "1.0.0"
@@ -34,11 +33,12 @@ object Versions {
     const val jDatabinding = "1.0.4"
     const val progressview = "1.0.2"
     const val runtime = "1.1.0"
-    const val hit = "2.38.1"
+    const val hit = "2.42"
     const val hitViewModule = "1.0.0-alpha01"
-    const val appStartup = "1.0.0"
+    const val appStartup = "1.1.1"
     const val material = "1.3.0"
     const val compose = "1.1.1"
+    const val work = "2.7.1"
 }
 
 object AndroidX {
@@ -56,6 +56,8 @@ object AndroidX {
         "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiperefreshlayout}"
     const val appStartup = "androidx.startup:startup-runtime:${Versions.appStartup}"
     const val lifecycle = "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
+    const val work = "androidx.work:work-runtime:${Versions.work}"
+    const val workKtx = "androidx.work:work-runtime-ktx:${Versions.work}"
 }
 
 object Basic {
@@ -68,6 +70,7 @@ object Hilt {
     const val daggerCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hit}"
     const val viewModule = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hitViewModule}"
     const val compiler = "androidx.hilt:hilt-compiler:${Versions.hitViewModule}"
+    const val work = "androidx.hilt:hilt-work:1.0.0"
 }
 
 object Coil {

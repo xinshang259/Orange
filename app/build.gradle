@@ -82,6 +82,11 @@ dependencies {
     implementation Compose.viewmodel
     implementation Compose.foundation
     implementation Compose.foundationLayout
+    implementation Hilt.work
+    implementation AndroidX.appStartup
+
+    implementation AndroidX.work
+    implementation AndroidX.workKtx
     // UI测试
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:1.0.5"
     // UI工具包
